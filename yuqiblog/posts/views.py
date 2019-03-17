@@ -15,8 +15,8 @@ def home(request):
     posts  = Post.objects.order_by('-pub_date')
     return render(request, 'posts/home.html', {'posts':posts})
 
-def post_details(request, post_id):
-    post = get_object_or_404(Post, pk=post_id)
+def post_details(request, pk):
+    post = get_object_or_404(Post, pk=pk)
     return render(request, 'posts/posts_detail.html', {'post':post})
 
 @login_required
