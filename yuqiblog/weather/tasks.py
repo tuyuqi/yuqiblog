@@ -26,7 +26,7 @@ def task_mail():
     now_utc = utc.localize(datetime.utcfromtimestamp(city_weather['dt']))
     weather = {
             'city' : city,
-            'temperature' : city_weather['main']['temps
+            'temperature' : city_weather['main']['temps'],
             'description' : city_weather['weather'][0]['description'],
             'icon' : city_weather['weather'][0]['icon'],
             ##'tisme' : datetime.fromtimestamp(city_weather['dt']).strftime('%Y-%m-%d'),
