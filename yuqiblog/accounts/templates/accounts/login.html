@@ -27,17 +27,7 @@
                   <li class="nav-item">
                     <a class="nav-link" href="{% url 'about'%}">About me</a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Experiences
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Recent work</a>
-                      <a class="dropdown-item" href="#">Research</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Fun fact!</a>
-                    </div>
-                  </li>
+
                   <li class="nav-item">
                     <a class="nav-link" href="{% url 'create'%}" tabindex="-1" aria-disabled="true">Add New Post</a>
                   </li>
@@ -46,6 +36,9 @@
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="{% url 'login' %}" tabindex="-1" aria-disabled="true">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'weather' %}" tabindex="-1" aria-disabled="true">Today's weather</a>
                   </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">

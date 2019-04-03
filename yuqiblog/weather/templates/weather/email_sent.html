@@ -47,45 +47,31 @@
                 </form>
               </div>
          </nav>
+          <br>
+          <br>
+          <br>
+          <section class="hero is-primary">
+              <div class="hero-body">
+                  <div class="container">
+                      <h1 class="title">
+                          Thank You
+                      </h1>
+                      <br>
+                      <br>
+                  </div>
+              </div>
+          </section>
 
 
-         <div class="container">
+          <div class="container">
 
+             <h3>Please go to the mailbox to receive ！ </h3>
 
-
-
-                {% block content %}
-                <h1>Sign Up!</h1>
-
-                {% if error %}
-                {{ error }}
-                <br />
-                <br />
-                {% endif %}
-
-                <form method="POST" action="{% url 'signup' %}">
-                  {% csrf_token %}
-                  Username:
-                  <br />
-                  <input type="text" name="username" />
-                  <br />
-                  Password:
-                  <br />
-                  <input type="password" name="password1" />
-                  <br />
-                  Confirm Password:
-                  <br />
-                  <input type="password" name="password2" />
-                  <br />
-                  <br />
-                  <input class="btn btn-primary" type="submit" value="Sign Up!">
-                </form>
-
-                {% endblock %}
+           <div>
 
 
 
-<div>
+
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
