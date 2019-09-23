@@ -22,6 +22,7 @@ import accounts.views
 from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
+from books.views import book_spider, get_books
 
 
 urlpatterns = [
@@ -39,7 +40,8 @@ urlpatterns = [
     path('comment/<int:pk>/remove/', posts.views.comment_remove, name='comment_remove'),
     #path('user/<username>', posts.views name='userposts')
     path('weather/', include('weather.urls')),
-
+    path('book_spider/', book_spider, name='book_spider'),
+    path('get_books/', get_books, name='get_books'),
 
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
